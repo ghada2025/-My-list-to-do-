@@ -1,0 +1,788 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 35, 35);
+}
+/*-----------App.tsx-----------------------*/
+.app{
+    width:300px;
+    min-height: 540px;
+    height: 100%;
+    border: #00cc88 solid 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: -3px 3px 22px -1px rgba(0,204,136,0.75);
+    -webkit-box-shadow: -3px 3px 22px -1px rgba(0,204,136,0.75);
+
+}
+
+/*----taskForm-----------------------------------------------------------------
+---------------------container-------------------------------------------*/
+.container {
+    width: 290px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    background: #000;
+    background-image: radial-gradient(4px 100px at 0px 235px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 235px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 117.5px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 252px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 252px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 126px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 150px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 150px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 75px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 253px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 253px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 126.5px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 204px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 204px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 102px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 134px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 134px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 67px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 179px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 179px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 89.5px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 299px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 299px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 149.5px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 215px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 215px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 107.5px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 281px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 281px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 140.5px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 158px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 158px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 79px, #0f0 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 210px, #0f0, #0000),
+    radial-gradient(4px 100px at 300px 210px, #0f0, #0000),
+    radial-gradient(1.5px 1.5px at 150px 105px, #0f0 100%, #0000 150%);
+    background-size:
+    300px 235px,
+    300px 235px,
+    300px 235px,
+    300px 252px,
+    300px 252px,
+    300px 252px,
+    300px 150px,
+    300px 150px,
+    300px 150px,
+    300px 253px,
+    300px 253px,
+    300px 253px,
+    300px 204px,
+    300px 204px,
+    300px 204px,
+    300px 134px,
+    300px 134px,
+    300px 134px,
+    300px 179px,
+    300px 179px,
+    300px 179px,
+    300px 299px,
+    300px 299px,
+    300px 299px,
+    300px 215px,
+    300px 215px,
+    300px 215px,
+    300px 281px,
+    300px 281px,
+    300px 281px,
+    300px 158px,
+    300px 158px,
+    300px 158px,
+    300px 210px,
+    300px 210px,
+    300px 210px;
+    animation: hi 150s linear infinite;
+}
+
+@keyframes hi {
+    0% {
+        background-position:
+        0px 220px,
+        3px 220px,
+        151.5px 337.5px,
+        25px 24px,
+        28px 24px,
+        176.5px 150px,
+        50px 16px,
+        53px 16px,
+        201.5px 91px,
+        75px 224px,
+        78px 224px,
+        226.5px 350.5px,
+        100px 19px,
+        103px 19px,
+        251.5px 121px,
+        125px 120px,
+        128px 120px,
+        276.5px 187px,
+        150px 31px,
+        153px 31px,
+        301.5px 120.5px,
+        175px 235px,
+        178px 235px,
+        326.5px 384.5px,
+        200px 121px,
+        203px 121px,
+        351.5px 228.5px,
+        225px 224px,
+        228px 224px,
+        376.5px 364.5px,
+        250px 26px,
+        253px 26px,
+        401.5px 105px,
+        275px 75px,
+        278px 75px,
+        426.5px 180px;
+    }
+    to {
+        background-position:
+        0px 6800px,
+        3px 6800px,
+        151.5px 6917.5px,
+        25px 13632px,
+        28px 13632px,
+        176.5px 13758px,
+        50px 5416px,
+        53px 5416px,
+        201.5px 5491px,
+        75px 17175px,
+        78px 17175px,
+        226.5px 17301.5px,
+        100px 5119px,
+        103px 5119px,
+        251.5px 5221px,
+        125px 8428px,
+        128px 8428px,
+        276.5px 8495px,
+        150px 9876px,
+        153px 9876px,
+        301.5px 9965.5px,
+        175px 13391px,
+        178px 13391px,
+        326.5px 13540.5px,
+        200px 14741px,
+        203px 14741px,
+        351.5px 14848.5px,
+        225px 18770px,
+        228px 18770px,
+        376.5px 18910.5px,
+        250px 5082px,
+        253px 5082px,
+        401.5px 5161px,
+        275px 6375px,
+        278px 6375px,
+        426.5px 6480px;
+    }
+}
+/*------------ form-------------------------------------------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+/*------------------------title---------------------------------------*/
+.title{
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: "Playwrite IT Moderna", serif;
+}
+
+.container h4 {
+    font-weight: bolder;
+    color: #fff;
+    font-family: "Playwrite IT Moderna", serif;
+}
+/*-------------------------input---------------------------------------*/
+.input {
+    width: 250px;
+    border-radius: 10px;
+    outline: 2px solid #00ad54;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+}
+.input:focus {
+    outline-offset: 5px;
+    background-color: #fff
+}
+/*---------------------Button-Add-----------------------------------------*/
+.buttonAdd {
+    width: 200px;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+}
+.button-decor {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+}
+.button-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+.button__icon {
+    width: 48px;
+    height: 40px;
+    background-color: var(--clr);
+    display: grid;
+    place-items: center;
+}
+.button__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+.buttonAdd:hover .button__text {
+    color: #fff;
+}
+.buttonAdd:hover .button-decor {
+    transform: translate(0);
+}
+
+/*------------TaskList-----------------------------------------*/
+/*checkbox*/
+.neon-checkbox {
+    --primary: #00ffaa;
+    --primary-dark: #00cc88;
+    --primary-light: #88ffdd;
+    --size: 25px;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .neon-checkbox input {
+    display: none;
+  }
+  
+  .neon-checkbox__frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .neon-checkbox__box {
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    border: 2px solid var(--primary-dark);
+    transition: all 0.4s ease;
+  }
+  
+  .neon-checkbox__check-container {
+    position: absolute;
+    inset: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .neon-checkbox__check {
+    width: 80%;
+    height: 80%;
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    transform-origin: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .neon-checkbox__glow {
+    position: absolute;
+    inset: -2px;
+    border-radius: 6px;
+    background: var(--primary);
+    opacity: 0;
+    filter: blur(8px);
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+  }
+  
+  .neon-checkbox__borders {
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .neon-checkbox__borders span {
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: var(--primary);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .neon-checkbox__borders span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    animation: borderFlow1 2s linear infinite;
+  }
+  
+  .neon-checkbox__borders span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 40px;
+    animation: borderFlow2 2s linear infinite;
+  }
+  
+  .neon-checkbox__borders span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    animation: borderFlow3 2s linear infinite;
+  }
+  
+  .neon-checkbox__borders span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 40px;
+    animation: borderFlow4 2s linear infinite;
+  }
+  
+  .neon-checkbox__particles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 6px var(--primary);
+  }
+  
+  .neon-checkbox__rings {
+    position: absolute;
+    inset: -20px;
+    pointer-events: none;
+  }
+  
+  .neon-checkbox__rings .ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .neon-checkbox__sparks span {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--primary), transparent);
+    opacity: 0;
+  }
+  
+  /* Hover Effects */
+  .neon-checkbox:hover .neon-checkbox__box {
+    border-color: var(--primary);
+    transform: scale(1.05);
+  }
+  
+  /* Checked State */
+  .neon-checkbox input:checked ~ .neon-checkbox__frame .neon-checkbox__box {
+    border-color: var(--primary);
+    background: rgba(0, 255, 170, 0.1);
+  }
+  
+  .neon-checkbox input:checked ~ .neon-checkbox__frame .neon-checkbox__check {
+    stroke-dashoffset: 0;
+    transform: scale(1.1);
+  }
+  
+  .neon-checkbox input:checked ~ .neon-checkbox__frame .neon-checkbox__glow {
+    opacity: 0.2;
+  }
+  
+  .neon-checkbox
+    input:checked
+    ~ .neon-checkbox__frame
+    .neon-checkbox__borders
+    span {
+    opacity: 1;
+  }
+  
+  /* Particle Animations */
+  .neon-checkbox
+    input:checked
+    ~ .neon-checkbox__frame
+    .neon-checkbox__particles
+    span {
+    animation: particleExplosion 0.6s ease-out forwards;
+  }
+  
+  .neon-checkbox
+    input:checked
+    ~ .neon-checkbox__frame
+    .neon-checkbox__rings
+    .ring {
+    animation: ringPulse 0.6s ease-out forwards;
+  }
+  
+  .neon-checkbox
+    input:checked
+    ~ .neon-checkbox__frame
+    .neon-checkbox__sparks
+    span {
+    animation: sparkFlash 0.6s ease-out forwards;
+  }
+  
+  /* Animations */
+  @keyframes borderFlow1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+  
+  @keyframes borderFlow2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(200%);
+    }
+  }
+  
+  @keyframes borderFlow3 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  
+  @keyframes borderFlow4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-200%);
+    }
+  }
+  
+  @keyframes particleExplosion {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(
+          calc(-50% + var(--x, 20px)),
+          calc(-50% + var(--y, 20px))
+        )
+        scale(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes ringPulse {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sparkFlash {
+    0% {
+      transform: rotate(var(--r, 0deg)) translateX(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(var(--r, 0deg)) translateX(30px) scale(0);
+      opacity: 0;
+    }
+  }
+  
+  /* Particle Positions */
+  .neon-checkbox__particles span:nth-child(1) {
+    --x: 25px;
+    --y: -25px;
+  }
+  .neon-checkbox__particles span:nth-child(2) {
+    --x: -25px;
+    --y: -25px;
+  }
+  .neon-checkbox__particles span:nth-child(3) {
+    --x: 25px;
+    --y: 25px;
+  }
+  .neon-checkbox__particles span:nth-child(4) {
+    --x: -25px;
+    --y: 25px;
+  }
+  .neon-checkbox__particles span:nth-child(5) {
+    --x: 35px;
+    --y: 0px;
+  }
+  .neon-checkbox__particles span:nth-child(6) {
+    --x: -35px;
+    --y: 0px;
+  }
+  .neon-checkbox__particles span:nth-child(7) {
+    --x: 0px;
+    --y: 35px;
+  }
+  .neon-checkbox__particles span:nth-child(8) {
+    --x: 0px;
+    --y: -35px;
+  }
+  .neon-checkbox__particles span:nth-child(9) {
+    --x: 20px;
+    --y: -30px;
+  }
+  .neon-checkbox__particles span:nth-child(10) {
+    --x: -20px;
+    --y: 30px;
+  }
+  .neon-checkbox__particles span:nth-child(11) {
+    --x: 30px;
+    --y: 20px;
+  }
+  .neon-checkbox__particles span:nth-child(12) {
+    --x: -30px;
+    --y: -20px;
+  }
+  
+  /* Spark Rotations */
+  .neon-checkbox__sparks span:nth-child(1) {
+    --r: 0deg;
+    top: 50%;
+    left: 50%;
+  }
+  .neon-checkbox__sparks span:nth-child(2) {
+    --r: 90deg;
+    top: 50%;
+    left: 50%;
+  }
+  .neon-checkbox__sparks span:nth-child(3) {
+    --r: 180deg;
+    top: 50%;
+    left: 50%;
+  }
+  .neon-checkbox__sparks span:nth-child(4) {
+    --r: 270deg;
+    top: 50%;
+    left: 50%;
+  }
+  
+  /* Ring Delays */
+  .neon-checkbox__rings .ring:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .neon-checkbox__rings .ring:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .neon-checkbox__rings .ring:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+/*button delete*/
+.button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    gap: 2px;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button:hover {
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+    gap: 0;
+  }
+  
+  .bin-top {
+    transform-origin: bottom right;
+  }
+  .button:hover .bin-top {
+    transition-duration: 0.5s;
+    transform: rotate(160deg);
+  }
+/*button edit*/ 
+.edit-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+  }
+  
+  .edit-svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .edit-svgIcon path {
+    fill: white;
+  }
+  
+  .edit-button:hover {
+    width: 60px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .edit-button:hover .edit-svgIcon {
+    width: 15px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .edit-button::before {
+    display: none;
+    content: "Edit";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Poppins", serif;
+    font-weight: bolder;
+  }
+  .item p{
+    width: 160px;
+  }
+  .buttonitem{
+    display: flex;
+    gap: 5px;
+  }
+  .list h1{
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: "Playwrite IT Moderna", serif;
+    margin: 15px 0px;
+  }
+.Navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Playwrite IT Moderna", serif;
+}
+.Navbar h1{
+    font-weight: bolder;
+    text-decoration: dotted;
+}
+.Navbar div {
+    margin-left: 30px;
+}
+  
+
+
