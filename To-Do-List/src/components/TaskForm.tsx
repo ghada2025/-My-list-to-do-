@@ -12,33 +12,39 @@ type TaskFormProps = {
 };
 
 export function TaskForm({ tasks, setTasks }: TaskFormProps) {
-    // definir le state newTask pour la gestion des nouvelles taches
     const [newTask, setNewTask] = useState("");
 
-    // fonction pour ajouter une tache
     function AddTask(event: React.FormEvent) {
-        // empecher la soumission du formulaire
         event.preventDefault();
-        if (newTask !== "") {// si la tache n'est pas vide
-            setTasks([...tasks, { id: Date.now(), title: newTask, completed: false }]);// ajouter la tache
-            setNewTask("");// vider l'input
+        if (newTask !== "") {
+            setTasks([...tasks, { id: Date.now(), title: newTask, completed: false }]);
+            setNewTask("");
         }
     }
     return (
-        <div className="container">
-            <h1 className="title">Add To Do</h1>
-            <h4>Date : {new Date().toDateString()}</h4>{/*afficher la date*/}
-            <form>{/* formulaire */}
-                {/* input pour ajouter une tache utiliser onChange pour mettre a jour la tache */}
-                <input onChange={(e) => setNewTask(e.target.value)} value={newTask} type="text" placeholder="Write here..." name="text" className="input" />
-                <button className="buttonAdd" style={{ "--clr": ` #00ad54` } as React.CSSProperties}>
-                    <span className="button-decor"></span>
-                    <div className="button-content">
-                        <i className="fa fa-plus button__icon"></i>
-                        <span className="button__text" onClick={AddTask}>Add To Do</span>{/*ajouter la tache avec le bouton Ajouter To Do */}
-                    </div>
-                </button>
+        <div className="bg-white rounded-t-xl shadow-md p-6 w-[480px] mt-6 border-2 border-[#D1A28B]">
+            <h1 className="text-xl font-semibold mb-2">Add To Do</h1>
+            <h4 className="text-sm text-gray-500 mb-4"><span className="font-semibold text-[#D1A28B]">Date:</span> {new Date().toDateString()}</h4>
+            <form onSubmit={(e) => e.preventDefault()} >
+                <div className="flex flex-row gap-2 h-12 w-full">
+                    <input
+                    onChange={(e) => setNewTask(e.target.value)}
+                    value={newTask}
+                    type="text"
+                    placeholder="Write a task..."
+                    className="w-full h-12 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#D1A28B] focus:ring-opacity-50 mb-3"
+                    />
+
+                    <button
+                    onClick={AddTask}
+                    className="w-1/3 bg-[#393433] text-white py-2 rounded-md hover:bg-[#00ad54] transition-colors"
+                    >
+                    Add
+                    </button>
+                </div>
+                
             </form>
         </div>
+
     )
 }
