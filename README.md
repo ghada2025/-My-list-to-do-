@@ -6,7 +6,7 @@ Une application de gestion de tâches simple, intuitive et rapide développée a
 
 ## 📸 Aperçu de l'application
 
-<div align="center">
+<div>
   <img src="./To-Do-List/public/screenshot.jpg" alt="Aperçu de l'application" width="300" height="300"/>
 </div>
 
