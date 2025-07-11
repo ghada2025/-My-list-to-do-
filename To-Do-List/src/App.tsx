@@ -12,7 +12,7 @@ function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
   return (
     <>
-    <div className="flex flex-col items-center h-screen bg-white w-[500px]">
+    <div className="flex flex-col items-center h-[98%] bg-white w-[500px] mb-4">
       <TaskForm tasks={tasks} setTasks={setTasks}/>
       <TaskList tasks={tasks} setTasks={setTasks} ></TaskList>
     </div>

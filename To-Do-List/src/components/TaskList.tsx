@@ -72,7 +72,7 @@ export function TaskList({ tasks, setTasks }: TaskListProps) {
 
 
     return (
-        <div className="bg-white rounded-b-xl shadow-md p-6 w-[480px] h-screen ">
+        <div className="bg-white rounded-b-xl shadow-md p-6 w-[480px] h-screen border-2 border-[#D1A28B]">
             <h1 className="text-xl font-semibold mb-4 text-[#D1A28B]">List of To Do</h1>
             {tasks.map((task) => (
                 <div
