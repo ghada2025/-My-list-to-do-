@@ -1,19 +1,46 @@
-# To-Do List App
+# 📝 To-Do List App
 
-Cette application est une simple To-Do List développée en React avec TypeScript. Elle permet d'ajouter, modifier, supprimer et cocher des tâches. Les tâches sont également enregistrées dans le `localStorage` pour une persistance des données.
+Une application de gestion de tâches simple, intuitive et rapide développée avec **React** et **TypeScript**. Elle permet d’ajouter, modifier, supprimer et cocher des tâches, tout en assurant la persistance des données grâce au `localStorage`.
 
-## Prérequis
+---
 
-Avant d'exécuter cette application, assurez-vous d'avoir installé les éléments suivants :
+## 📸 Aperçu de l'application
+
+> ![Aperçu de l'application](./public/screenshot.jpg)
+
+---
+
+## ✅ Fonctionnalités principales
+
+- ➕ Ajouter une nouvelle tâche  
+- ✏️ Modifier une tâche existante  
+- 🗑️ Supprimer une tâche  
+- ☑️ Marquer une tâche comme terminée  
+- ⬇️ Trier les tâches (les tâches terminées sont affichées en bas)  
+- 💾 Sauvegarde automatique dans le `localStorage`  
+
+---
+
+## 🚀 Prérequis
+
+Avant de commencer, assurez-vous d’avoir installé les éléments suivants :
 
 - [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) 
+- [npm](https://www.npmjs.com/)
+
+---
+
+## ⚙️ Installation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/ghada2025/-My-list-to-do-.git
 
 ## Installation
 
 1. Clonez ce dépôt :
    ```sh
-   git clone https://github.com/ghada2025/Checkpoint_Manage_State.git
+   git clone https://github.com/ghada2025/-My-list-to-do-.git
    ```
 2. Accédez au dossier du projet :
    ```sh
@@ -32,14 +59,6 @@ npm run dev
 ```
 
 L'application sera disponible à l'adresse `http://localhost:5173/` (ou un autre port si 5173 est occupé).
-
-## Fonctionnalités
-- Ajouter une tâche
-- Supprimer une tâche
-- Modifier une tâche
-- Marquer une tâche comme terminée
-- Trier les tâches (les tâches terminées sont placées en bas)
-- Sauvegarde des tâches dans le `localStorage`
 
 ## Structure du projet
 
