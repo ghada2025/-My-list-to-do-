@@ -5,8 +5,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(35, 35, 35);
-}
+    background-color: white;
+    height: 100
+  }
 /*-----------App.tsx-----------------------*/
 .app{
     width:300px;
